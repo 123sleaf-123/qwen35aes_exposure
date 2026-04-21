@@ -1,0 +1,31 @@
+{
+  "model_family": "Qwen3.5-VL",
+  "instruction": "Assess the image quality of this image. Return a JSON object with exactly two keys: \"score\" and \"reasoning\". \"score\" must be a float from 0 to 10 with at most two decimals. \"reasoning\" must be one professional paragraph covering brightness and contrast, noise control, color fidelity, texture and detail preservation, and overall naturalness. Do not mention hidden metrics, teacher models, or any training process.",
+  "image_root": "images/REED_3_RESIZE_512",
+  "splits": {
+    "training": {
+      "rows": 7039,
+      "missing_assistant": 3,
+      "skipped_empty_reasoning": 3,
+      "missing_images": 0,
+      "image_dir": "images/REED_3_RESIZE_512/training",
+      "output_path": "score_result_qwen35_vl_sft/training.jsonl"
+    },
+    "validation": {
+      "rows": 1007,
+      "missing_assistant": 1,
+      "skipped_empty_reasoning": 1,
+      "missing_images": 0,
+      "image_dir": "images/REED_3_RESIZE_512/validation",
+      "output_path": "score_result_qwen35_vl_sft/validation.jsonl"
+    },
+    "testing": {
+      "rows": 2027,
+      "missing_assistant": 3,
+      "skipped_empty_reasoning": 3,
+      "missing_images": 0,
+      "image_dir": "images/REED_3_RESIZE_512/testing",
+      "output_path": "score_result_qwen35_vl_sft/testing.jsonl"
+    }
+  }
+}

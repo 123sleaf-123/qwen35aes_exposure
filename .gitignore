@@ -1,0 +1,8 @@
+qwen35_vl_4b_iqa_lora/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+*.log
+logs/
+log/
